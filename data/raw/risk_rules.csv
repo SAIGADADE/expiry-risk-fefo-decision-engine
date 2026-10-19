@@ -1,0 +1,7 @@
+Parameter,Value,Description
+Snapshot_Date,2026-10-20,Fixed reporting date for all day calculations
+Demand_Window_Days,30,Days used to convert Sales_Qty_30D into Avg Daily Demand
+Critical_Max_Days_To_Expiry,30,At-risk stock with Days to Expiry <= this value is Critical
+High_Max_Days_To_Expiry,90,At-risk stock with Days to Expiry <= this value (and above Critical) is High; above is Medium
+Transfer_Min_Days_To_Expiry,15,Minimum days left before a batch can be considered for transfer
+Long_Shelf_Life_Days,365,Reporting flag for batches with more than this many days to expiry
