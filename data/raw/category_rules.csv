@@ -1,0 +1,5 @@
+Category,Min_Shelf_Life_Days,Max_Shelf_Life_Days,Promotion_Allowed,Transfer_Allowed,Notes
+FMCG,180,540,Yes,Yes,Food-style fast-moving items; shortest synthetic shelf life
+Beauty,365,900,Yes,Yes,Synthetic shelf life range
+Personal Care,540,1095,Yes,Yes,Synthetic shelf life range
+Home Care,730,1460,Yes,Yes,Longest synthetic shelf life range
