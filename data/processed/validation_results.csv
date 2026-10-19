@@ -1,0 +1,25 @@
+Check,Result,Detail
+Row count = 5000,PASS,5000
+Batch_Record_ID unique & non-blank,PASS,
+SKU x Batch x Warehouse unique,PASS,
+5 warehouses,PASS,
+Expiry after Manufacture for all rows,PASS,
+Receipt on/before Snapshot,PASS,
+Qty >= 0 and cost/price > 0,PASS,
+Single fixed Snapshot_Date (2026-10-20),PASS,
+Batch Sales_30D total reconciles to sku_demand_summary,PASS,289438
+Expired edge case present (DTE<0),PASS,218
+Zero-demand edge case present,PASS,187
+Zero-stock edge case present,PASS,80
+Positive-demand case present,PASS,
+Quality-hold edge case present,PASS,141
+Long shelf life (DTE>365) case present,PASS,1348
+No inf/NaN Days_Of_Cover where demand>0,PASS,
+Days_Of_Cover blank only when demand = 0,PASS,
+Excess between 0 and Qty_On_Hand,PASS,
+Stock value = sum(Qty x Unit cost),PASS,85280885.63
+Excess value <= stock value,PASS,
+Band totals reconcile to total stock value,PASS,
+Band batch counts sum to 5000,PASS,
+Expired batches: full quantity is excess,PASS,
+"Transfer candidates: not on hold, DTE>=15, capacity>=excess",PASS,188
